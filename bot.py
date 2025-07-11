@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 import os
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv(7652768419:AAEtsIyMUYoXi_2uW00gf-2JqfB93kvpNO8)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Welcome! Send your serial video with caption: serial.mp4")
@@ -23,7 +23,7 @@ async def handle_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Real processing will happen here in future
         await update.message.reply_video("serial.mp4", caption="Final video (demo)")
 
-app = ApplicationBuilder().token(TOKEN).build()
+app = ApplicationBuilder().token(7652768419:AAEtsIyMUYoXi_2uW00gf-2JqfB93kvpNO8).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.VIDEO, handle_video))
 
